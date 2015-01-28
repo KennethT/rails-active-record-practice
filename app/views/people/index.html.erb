@@ -1,6 +1,12 @@
 <div class="page-header">
-  <h1>People</h1>
+  <h1><%= @person.first_name %></h1>
 </div>
+
+<%= link_to "Sort by First Name", root_path(sort_by: "first_name") %> |
+<%= link_to "Sort by Last Name", root_path(sort_by: "last_name") %> |
+<%= link_to "Sort by Eye Color", root_path(sort_by: "eye_color") %> |
+<%= link_to "Sort by Date of Bath", root_path(sort_by: "date_of_birth") %> |
+<%= link_to "Awesome Only", root_path(awesome: true) %>
 
 <table class="table table-bordered">
   <thead>
